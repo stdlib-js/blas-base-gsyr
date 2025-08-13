@@ -35,32 +35,38 @@ limitations under the License.
 
 > Perform the symmetric rank 1 operation `A = α*x*x^T + A`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/blas-base-gsyr
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var gsyr = require( '@stdlib/blas-base-gsyr' );
+gsyr = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-gsyr@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var gsyr = require( 'path/to/vendor/umd/blas-base-gsyr/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-gsyr@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.gsyr;
+})();
+</script>
 ```
 
 #### gsyr( order, uplo, N, α, x, sx, A, LDA )
@@ -164,10 +170,15 @@ gsyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var ones = require( '@stdlib/array-ones' );
-var gsyr = require( '@stdlib/blas-base-gsyr' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-gsyr@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var opts = {
     'dtype': 'generic'
@@ -187,6 +198,11 @@ console.log( A1 );
 
 gsyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A2, 3, 1, 0 );
 console.log( A2 );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -279,11 +295,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/blas/base/dsyr]: https://github.com/stdlib-js/blas-base-dsyr
+[@stdlib/blas/base/dsyr]: https://github.com/stdlib-js/blas-base-dsyr/tree/umd
 
-[@stdlib/blas/base/ssyr]: https://github.com/stdlib-js/blas-base-ssyr
+[@stdlib/blas/base/ssyr]: https://github.com/stdlib-js/blas-base-ssyr/tree/umd
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/umd
 
 
 </section>
