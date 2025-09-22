@@ -285,7 +285,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
-
 </section>
 
 <!-- /.links -->
