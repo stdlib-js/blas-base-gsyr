@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-03)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`d2cc9c0`](https://github.com/stdlib-js/stdlib/commit/d2cc9c0f6bf5ff5ae176ccd16ea4e97a9857434e) - **bench:** use string interpolation in `blas/base/gsyr` [(#10636)](https://github.com/stdlib-js/stdlib/pull/10636) _(by Om-A-osc)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Om-A-osc
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
