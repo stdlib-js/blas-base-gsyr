@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-27)
+## Unreleased (2026-07-13)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`6352f5d`](https://github.com/stdlib-js/stdlib/commit/6352f5d926b03262dc86e116258168fee4c7132c) - **refactor:** add support for enums in `blas/base/gsyr` [(#13447)](https://github.com/stdlib-js/stdlib/pull/13447) _(by Kaustubh Patange)_
 -   [`d4396d9`](https://github.com/stdlib-js/stdlib/commit/d4396d99dd16a6ef76496a499ddf392cb2f6c564) - **chore:** fix lint errors [(#11474)](https://github.com/stdlib-js/stdlib/pull/11474) _(by Guneet Gill)_
 -   [`f9d1409`](https://github.com/stdlib-js/stdlib/commit/f9d140985e169d34f4e66bd770dc675ea28588a3) - **docs:** add missing JSDoc comment _(by Athan Reines)_
 -   [`d2cc9c0`](https://github.com/stdlib-js/stdlib/commit/d2cc9c0f6bf5ff5ae176ccd16ea4e97a9857434e) - **bench:** use string interpolation in `blas/base/gsyr` [(#10636)](https://github.com/stdlib-js/stdlib/pull/10636) _(by Om-A-osc)_
@@ -38,10 +39,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Guneet Gill
+-   Kaustubh Patange
 -   Om-A-osc
 
 </section>
